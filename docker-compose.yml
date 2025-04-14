@@ -33,7 +33,9 @@ services:
       EULA: true
       GUI: false # https://docker-minecraft-server.readthedocs.io/en/latest/configuration/misc-options/#explicitly-disable-gui
     ports:
+      - "8804:8804"
       - "25565:25565"
+      - "25575:25575"
     volumes:
       - ./data:/data
       - ./server-icon.png:/server-icon.png

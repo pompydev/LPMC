@@ -1,0 +1,47 @@
+# https://github.com/YouHaveTrouble/minecraft-optimization
+
+services:
+  smp:
+    # Paper needs Java 21+. See https://docs.papermc.io/paper/getting-started
+    # https://docker-minecraft-server.readthedocs.io/en/latest/versions/java/
+    image: "itzg/minecraft-server:java23"
+    environment: # https://docker-minecraft-server.readthedocs.io/en/latest/variables/#server
+      # Server
+      # https://docker-minecraft-server.readthedocs.io/en/latest/types-and-platforms/server-types/paper/
+      # https://papermc.io/downloads/all
+      TYPE: PAPER
+      VERSION: 1.21.4
+      PAPER_BUILD: 225
+      MODS_FILE: "/extras/mods.txt" # https://docker-minecraft-server.readthedocs.io/en/latest/mods-and-plugins/#modplugin-url-listing-file
+      RCON_PASSWORD: password # https://docker-minecraft-server.readthedocs.io/en/latest/variables/#rcon
+
+      # Whitelist
+      # https://docker-minecraft-server.readthedocs.io/en/latest/variables/#whitelist
+      ENABLE_WHITELIST: true
+      WHITELIST_FILE: "/extras/whitelist.json"
+
+      # Info
+      ICON: https://raw.githubusercontent.com/pompydev/LPMC/refs/heads/master/server-icon.png
+      SERVER_NAME: LPMC
+      MOTD: "LP but MC"
+
+      # Performance
+      MEMORY: 8G # https://docker-minecraft-server.readthedocs.io/en/latest/configuration/jvm-options/#memory-limit
+      USE_AIKAR_FLAGS: true # https://docker-minecraft-server.readthedocs.io/en/latest/configuration/jvm-options/#enable-aikars-flags
+
+      # Misc
+      EULA: true
+      GUI: false # https://docker-minecraft-server.readthedocs.io/en/latest/configuration/misc-options/#explicitly-disable-gui
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./data:/data
+      - ./mods.txt:/extras/mods.txt:ro
+      - ./whitelist.json:/extras/whitelist.json:ro
+    healthcheck:
+      test:
+        ["CMD", "/usr/local/bin/mc-monitor", "status", "--host", "localhost"]
+      interval: 2s
+      timeout: 10s
+      retries: 15
+  # https://github.com/itzg/docker-mc-backup

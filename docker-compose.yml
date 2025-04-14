@@ -21,7 +21,7 @@ services:
       WHITELIST_FILE: "/extras/whitelist.json"
 
       # Info
-      ICON: https://raw.githubusercontent.com/pompydev/LPMC/refs/heads/master/server-icon.png
+      ICON: /server-icon.png
       SERVER_NAME: LPMC
       MOTD: "LP but MC"
 
@@ -36,6 +36,7 @@ services:
       - "25565:25565"
     volumes:
       - ./data:/data
+      - ./server-icon.png:/server-icon.png
       - ./mods.txt:/extras/mods.txt:ro
       - ./whitelist.json:/extras/whitelist.json:ro
     healthcheck:

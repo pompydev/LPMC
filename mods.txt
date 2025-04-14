@@ -1,0 +1,42 @@
+# https://modrinth.com/plugin/essentialsx
+https://cdn.modrinth.com/data/hXiIvTyT/versions/SKQwLLoQ/EssentialsX-2.21.0.jar
+
+# https://modrinth.com/plugin/maintenancemode
+# https://cdn.modrinth.com/data/QOkEkSap/versions/D2XXq4an/MaintenanceMode-Universal-1.3.1.jar
+
+# https://modrinth.com/plugin/plan
+https://cdn.modrinth.com/data/wJQfHhxh/versions/teRNK6V9/Plan-5.6-build-2965.jar
+
+# https://modrinth.com/plugin/unifiedmetrics
+https://cdn.modrinth.com/data/p1ewR5kV/versions/Ypqt7eH1/unifiedmetrics-platform-bukkit-0.3.8.jar
+
+# https://modrinth.com/plugin/discordsrv
+https://cdn.modrinth.com/data/UmLGoGij/versions/MK210KrY/DiscordSRV-Build-1.29.0.jar
+
+# https://modrinth.com/plugin/coreprotect
+https://cdn.modrinth.com/data/Lu3KuzdV/versions/llmrc4cl/CoreProtect-22.4.jar
+
+# https://modrinth.com/plugin/holomobhealth
+https://cdn.modrinth.com/data/UitDglMl/versions/5E5pcBud/HoloMobHealth-2.3.12.0.jar
+
+# https://modrinth.com/plugin/decentholograms
+https://cdn.modrinth.com/data/w02MKsTg/versions/KHUZ0SgG/DecentHolograms-2.8.16.jar
+
+# https://modrinth.com/plugin/worldedit
+https://cdn.modrinth.com/data/1u6JkXh5/versions/DlD8WKr9/worldedit-bukkit-7.3.11.jar
+
+# https://modrinth.com/plugin/worldguard
+https://cdn.modrinth.com/data/DKY9btbd/versions/f9NoeotB/worldguard-bukkit-7.0.13-dist.jar
+
+# https://modrinth.com/plugin/skinsrestorer
+# https://cdn.modrinth.com/data/TsLS8Py5/versions/4DON6SzK/SkinsRestorer.jar
+
+# https://modrinth.com/plugin/toolstats
+https://cdn.modrinth.com/data/oBZj9E15/versions/qF0PeTJ5/toolstats-1.9.5.jar
+
+# https://modrinth.com/datapack/veinminer
+https://cdn.modrinth.com/data/OhduvhIc/versions/mA856HQI/veinminer-paper-2.4.3.jar
+
+
+# Dependencies
+https://github.com/dmulloy2/ProtocolLib/releases/download/5.3.0/ProtocolLib.jar

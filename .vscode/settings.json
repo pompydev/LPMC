@@ -21,6 +21,8 @@
     "LPMC",
     "maintenancemode",
     "MODRINTH",
-    "pompydev"
+    "pompy",
+    "pompydev",
+    "traefik"
   ]
 }

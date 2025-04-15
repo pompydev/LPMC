@@ -1,0 +1,21 @@
+services:
+  traefik:
+    image: traefik:latest
+    container_name: lpmc-proxy
+    restart: unless-stopped
+    configs:
+      - traefik-dynamic.yml
+    command: >
+      --entryPoints.lpmc.address=:25565
+      --providers.file.filename=/traefik-dynamic.yml
+    ports:
+      - target: 25565
+        published: 25565
+        protocol: tcp
+        mode: host
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+configs:
+  traefik-dynamic.yml:
+    file: ./traefik-dynamic.yml

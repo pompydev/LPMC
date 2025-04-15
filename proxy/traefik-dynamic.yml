@@ -1,0 +1,13 @@
+tcp:
+  routers:
+    to-lpmc:
+      entrypoints:
+        - lpmc
+      service: lpmc
+      rule: HostSNI(`*`)
+
+  services:
+    lpmc:
+      loadBalancer:
+        servers:
+          - address: 100.106.166.17:25565

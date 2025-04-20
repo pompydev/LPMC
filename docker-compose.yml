@@ -6,6 +6,7 @@ services:
     # https://docker-minecraft-server.readthedocs.io/en/latest/versions/java/
     image: "itzg/minecraft-server:java23"
     environment: # https://docker-minecraft-server.readthedocs.io/en/latest/variables/#server
+      TZ: Asia/Seoul
       # Server
       # https://docker-minecraft-server.readthedocs.io/en/latest/types-and-platforms/server-types/paper/
       # https://papermc.io/downloads/all

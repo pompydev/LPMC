@@ -12,7 +12,7 @@ services:
       # https://papermc.io/downloads/all
       TYPE: PAPER
       VERSION: 1.21.4
-      PAPER_BUILD: 225
+      PAPER_BUILD: 226
       MODS_FILE: "/extras/mods.txt" # https://docker-minecraft-server.readthedocs.io/en/latest/mods-and-plugins/#modplugin-url-listing-file
       RCON_PASSWORD: password # https://docker-minecraft-server.readthedocs.io/en/latest/variables/#rcon
 

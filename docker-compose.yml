@@ -48,4 +48,3 @@ services:
       interval: 2s
       timeout: 10s
       retries: 15
-  # https://github.com/itzg/docker-mc-backup

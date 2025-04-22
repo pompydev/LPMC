@@ -14,7 +14,7 @@ https://cdn.modrinth.com/data/p1ewR5kV/versions/Ypqt7eH1/unifiedmetrics-platform
 https://cdn.modrinth.com/data/UmLGoGij/versions/MK210KrY/DiscordSRV-Build-1.29.0.jar
 
 # https://modrinth.com/plugin/coreprotect
-https://www.patreon.com/file?h=113032756&m=361419549
+# manually downloaded latest version from https://www.patreon.com/posts/coreprotect-v23-113032756
 
 # https://modrinth.com/plugin/holomobhealth
 https://cdn.modrinth.com/data/UitDglMl/versions/WrLcWOzP/HoloMobHealth-2.3.13.0.jar
